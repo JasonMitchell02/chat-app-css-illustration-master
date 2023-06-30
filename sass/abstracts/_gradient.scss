@@ -1,0 +1,12 @@
+// Gradient Colors
+
+$clr-magenta-400: hsl(293, 100%, 63%);
+$clr-violet-500: hsl(264, 100%, 61%);
+
+// Linear Gradient
+
+$grad-background-api: linear-gradient(90deg, $clr-violet-500, $clr-magenta-400);
+
+$grad-background-speech: linear-gradient(90deg, $clr-magenta-400, $clr-violet-500);
+
+$grad-background-body: linear-gradient(310deg, $clr-violet-500, $clr-magenta-400);

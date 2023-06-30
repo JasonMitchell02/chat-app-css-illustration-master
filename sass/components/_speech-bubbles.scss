@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+
+.bubble-left {
+    color: $clr-violet-400;
+    background: $clr-violet-350;
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 8rem;
+    padding: 0.4rem;
+    border-radius: 0.6rem 0.6rem 0.6rem 0.275rem;
+}
+
+.bubble-right {
+    color: $clr-violet-300;
+    background: $clr-white;
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    width: 8rem;
+    border-radius: 0.6rem 0.6rem 0.275rem 0.6rem;
+    padding: 0.4rem;
+    -webkit-box-shadow: 4px 7px 15px 0px rgba(227,223,227,1);
+    -moz-box-shadow: 4px 7px 15px 0px rgba(227,223,227,1);
+    box-shadow: 4px 7px 15px 0px rgba(227,223,227,1); 
+}
+
+.small {
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+// Services bubbles
+
+.service-offered {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $clr-white;
+    background: $grad-background-speech;
+    font-size: 0.5rem;
+    border-radius: 0.6rem 0.6rem 0.6rem 0.275rem;
+    width: 9.5rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    font-size: 0.75rem;
+    font-weight: $fw-semi;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: 0.1rem solid $clr-magenta-200;
+    margin-right: 0.5rem;
+}

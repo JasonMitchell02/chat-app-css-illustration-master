@@ -1,0 +1,341 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 64rem;
+    margin: 4rem auto;
+  }
+}
+
+.background {
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(310deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 25rem;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -12rem;
+  left: -31.5rem;
+  z-index: -1;
+}
+@media (min-width: 1000px) {
+  .background {
+    top: -5rem;
+    left: -25rem;
+  }
+}
+@media (min-width: 1250px) {
+  .background {
+    height: 500px;
+    top: -3rem;
+    left: -22rem;
+  }
+}
+
+.background-transparent {
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(310deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 25rem;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -15rem;
+  right: -32.2rem;
+  z-index: -1;
+  opacity: 0.035;
+}
+@media (min-width: 1000px) {
+  .background-transparent {
+    bottom: -5rem;
+    right: -28rem;
+  }
+}
+@media (min-width: 1250px) {
+  .background-transparent {
+    height: 500px;
+    bottom: -3rem;
+    right: -27.5rem;
+  }
+}
+
+.phone {
+  width: 15rem;
+  height: 32rem;
+  margin: 4rem auto 3rem;
+  padding: 0.6rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: relative;
+}
+
+.app {
+  background: hsl(270, 20%, 96%);
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.main-section {
+  padding: 0.6rem 0.5rem;
+}
+
+.bubble-left {
+  color: hsl(276, 55%, 52%);
+  background: #ede5f4;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 8rem;
+  padding: 0.4rem;
+  border-radius: 0.6rem 0.6rem 0.6rem 0.275rem;
+}
+
+.bubble-right {
+  color: hsl(271, 15%, 43%);
+  background: hsl(0, 0%, 100%);
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  width: 8rem;
+  border-radius: 0.6rem 0.6rem 0.275rem 0.6rem;
+  padding: 0.4rem;
+  box-shadow: 4px 7px 15px 0px rgb(227, 223, 227);
+}
+
+.small {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.service-offered {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  font-size: 0.5rem;
+  border-radius: 0.6rem 0.6rem 0.6rem 0.275rem;
+  width: 9.5rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 0.1rem solid hsl(289, 100%, 72%);
+  margin-right: 0.5rem;
+}
+
+.pill-top {
+  background: hsl(0, 0%, 100%);
+  width: 8rem;
+  height: 1.8rem;
+  border-radius: 0.85rem;
+  position: absolute;
+  top: 0;
+  right: 3.5rem;
+  z-index: 3;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 1.5rem 1.5rem 0.4rem 0.4rem;
+  padding: 2rem 1rem 0.6rem 1rem;
+}
+
+.chevron:hover {
+  cursor: pointer;
+}
+
+.name {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.status {
+  font-size: 0.5rem;
+  color: hsl(276, 100%, 81%);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 1.5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.three-dots {
+  margin-left: 3.7rem;
+}
+.three-dots:hover {
+  cursor: pointer;
+}
+
+.dog-pics {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.doggy {
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  width: 2.5rem;
+}
+
+input[type=text] {
+  border: transparent;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.3rem;
+  border-radius: 2rem;
+  font-size: 0.55rem;
+  padding-left: 1rem;
+}
+input[type=text]::-moz-placeholder {
+  color: hsl(206, 6%, 79%);
+}
+input[type=text]::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+button {
+  position: absolute;
+  background: transparent;
+  border: transparent;
+  border-radius: 50%;
+  bottom: 1.25rem;
+  right: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.description {
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+@media (min-width: 800px) {
+  .description {
+    text-align: left;
+  }
+}
+
+h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 2.5rem;
+  padding: 0 2rem;
+  font-weight: 500;
+}
+
+.main-text {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.8;
+  padding: 1rem 2rem;
+  max-width: 23.5rem;
+  margin: auto;
+}
+@media (min-width: 800px) {
+  .main-text {
+    max-width: 32rem;
+  }
+}/*# sourceMappingURL=main.min.css.map */

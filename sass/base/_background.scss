@@ -1,0 +1,48 @@
+@use "../abstracts/" as *;
+
+.background {
+  width: 1000px;
+  height: 400px;
+  background: $grad-background-body;
+  border-radius: 25rem;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -12rem;
+  left: -31.5rem;
+  z-index: -1;
+
+  @include breakpoint-lg {
+    top: -5rem;
+    left: -25rem;
+  }
+
+  @include breakpoint-xl {
+    height: 500px;
+    top: -3rem;
+    left: -22rem;
+  }
+}
+
+.background-transparent {
+  width: 1000px;
+  height: 400px;
+  background: $grad-background-body;
+  border-radius: 25rem;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -15rem;
+  right: -32.2rem;
+  z-index: -1;
+  opacity: 0.035;
+
+  @include breakpoint-lg {
+    bottom: -5rem;
+    right: -28rem;
+  }
+
+  @include breakpoint-xl {
+    height: 500px;
+    bottom: -3rem;
+    right: -27.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.phone {
+  width: 15rem;
+  height: 32rem;
+  margin: 4rem auto 3rem;
+  padding: 0.6rem;
+  background: $clr-white;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: relative;
+}
+
+.app {
+  background: $clr-violet-050;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.main-section {
+  padding: 0.6rem 0.5rem;
+}

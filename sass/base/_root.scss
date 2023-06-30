@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+body {
+    height: 100vh;
+    font-family: $ff-main; 
+}
+
+main {
+    @include breakpoint-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 64rem;
+        margin: 4rem auto;
+    }
+}
